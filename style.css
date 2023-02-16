@@ -121,7 +121,7 @@ header {
 
 /* about start */
 #about {
-    padding: 60px;
+    padding: 60px 0px;
 }
 
 #about .img-box {
@@ -307,6 +307,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 #newsletter .form input {
     height: 50px;
     width: 350px;
@@ -315,7 +316,8 @@ header {
     padding-left: 10px;
     margin-right: 20px;
 }
-#newsletter .form input:focus{
+
+#newsletter .form input:focus {
     border: none;
 }
 
@@ -364,3 +366,96 @@ header {
 /*----------------
     footer ends 
  ----------------*/
+
+
+
+/* responsive mobile device css */
+@media only screen and (max-width:576px) {
+    .container {
+        width: 100%;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner {
+        padding-top: 70px;
+    }
+
+    #banner .banner-title {
+        font-size: 54px;
+        line-height: 61px;
+    }
+
+    #banner .description {
+        padding: 0px 30px 50px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    #about .container,
+    #about .img-box,
+    #features .container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    #about .section-title {
+        padding-top: 20px;
+    }
+
+    #features .img-part img {
+        width: 100%;
+    }
+
+    #features .articles {
+        padding: 0px 0px 0px 0px;
+    }
+
+    #features .img-part .orange-box {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #facts .facts-boxes,
+    #newsletter .form,
+    #sponsors .logos {
+        flex-direction: column;
+    }
+
+    #facts .facts-boxes .fact {
+        margin: 0px 20px 20px;
+    }
+
+    #newsletter .form input {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    #sponsors .logos {
+        align-items: center;
+    }
+
+    #sponsors .logos img {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 60px 0px 0px;
+    }
+}
